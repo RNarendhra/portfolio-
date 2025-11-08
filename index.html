@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Narendhra R • AI/ML Engineer</title>
+  <meta name="description" content="Portfolio of Narendhra R — AI/ML projects, LLMs, LangChain, FastAPI, Streamlit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d10; --card:#12151a; --muted:#9aa4b2; --text:#e8edf3; --primary:#6ee7ff; --chip:#1a1f27; --accent:#7c4dff;
+      --ring: rgba(110,231,255,0.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"Inter",system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--primary);text-decoration:none} a:hover{opacity:.9}
+    .container{max-width:1080px;margin:0 auto;padding:28px 18px 80px}
+    header{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:22px 0 10px;border-bottom:1px solid #1e232b}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent));filter:saturate(1.2)}
+    h1{font-size:1.6rem;margin:0;font-weight:800;letter-spacing:.2px}
+    .sub{color:var(--muted);font-size:.95rem;margin-top:2px}
+    .links{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:#0f1318;border:1px solid #222832;color:var(--text);padding:10px 14px;border-radius:10px;font-weight:600}
+    .btn:hover{border-color:#2b3340}
+    .primary{background:linear-gradient(180deg,#0b1620,#0e1b25);border-color:#22313d}
+    .primary:hover{box-shadow:0 0 0 3px var(--ring)}
+    main{display:grid;gap:28px;margin-top:28px}
+    section{background:var(--card);border:1px solid #1e232b;border-radius:16px;padding:20px}
+    .hero{display:grid;gap:10px;padding:24px 20px}
+    .hero h2{font-size:1.35rem;margin:0;font-weight:800}
+    .hero p{margin:4px 0 0;color:#c6d2de;line-height:1.6}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .chip{background:var(--chip);border:1px solid #222832;padding:6px 10px;border-radius:999px;font-size:.86rem;color:#cfe6f5}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+    @media(min-width:700px){.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:#0f1318;border:1px solid #1e232b;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px}
+    .card h3{margin:0;font-size:1.05rem}
+    .meta{color:var(--muted);font-size:.9rem}
+    .card .actions{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+    .pill{font-size:.82rem;background:#121820;border:1px solid #22313d;padding:6px 10px;border-radius:999px;color:#cfe6f5}
+    footer{color:var(--muted);text-align:center;margin-top:10px}
+    .small{font-size:.92rem;color:#cfe6f5}
+    .tight li{margin:6px 0}
+    ul{padding-left:18px}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#0f1318;border:1px solid #222832;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h1>Narendhra R</h1>
+          <div class="sub">AI/ML Engineer • LLMs • LangChain • FastAPI • Computer Vision</div>
+        </div>
+      </div>
+      <nav class="links">
+        <a class="btn primary" href="mailto:rnarendhra5@gmail.com">Contact</a>
+        <a class="btn" href="https://www.linkedin.com/in/narendhra-rampelly-149848227" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/RNarendhra" target="_blank" rel="noopener">GitHub</a>
+        <!-- Add your portfolio custom domain later if you want -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <h2>Hi, I'm Narendhra — I build practical AI systems.</h2>
+        <p class="small">
+          Highly motivated Computer Science graduate specializing in AI/ML, with hands-on experience in LLMs, LangChain, and deep learning. 
+          I love shipping real projects with FastAPI/Streamlit, and solving problems in NLP & Computer Vision.
+        </p>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">LLMs</span><span class="chip">LangChain</span>
+          <span class="chip">FastAPI</span><span class="chip">Streamlit</span><span class="chip">TensorFlow</span>
+          <span class="chip">PyTorch</span><span class="chip">YOLO</span><span class="chip">OpenCV</span>
+          <span class="chip">SQL</span><span class="chip">Git</span>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section>
+        <h2 style="margin:0 0 10px 0;font-weight:800;font-size:1.1rem">Projects</h2>
+        <div class="grid cols-2">
+          <!-- MCQ Generator -->
+          <article class="card">
+            <h3>MCQ Generator — Gemini API + LangChain</h3>
+            <div class="meta">Python • Streamlit/FastAPI • Pandas</div>
+            <p class="small">
+              Generates MCQs with answers and explanations from text/PDF/URLs. Supports difficulty levels, topic tagging, and CSV/JSON export.
+            </p>
+            <div class="actions">
+              <a href="#" class="pill">Repo (add link)</a>
+              <a href="#" class="pill">Live Demo (add link)</a>
+            </div>
+          </article>
+
+          <!-- Number Plate -->
+          <article class="card">
+            <h3>Vehicle Number Plate Detection — YOLO</h3>
+            <div class="meta">YOLOv4/8 • OpenCV</div>
+            <p class="small">
+              Real-time detection and localization of number plates in video streams; useful for traffic monitoring and toll systems.
+            </p>
+            <div class="actions">
+              <a href="#" class="pill">Repo (add link)</a>
+              <a href="#" class="pill">Demo Video</a>
+            </div>
+          </article>
+
+          <!-- Spam -->
+          <article class="card">
+            <h3>Semi-supervised Spam Detection — Twitter</h3>
+            <div class="meta">NLP • Semi-supervised Learning</div>
+            <p class="small">
+              Combines labeled and unlabeled tweets to classify spam using TF-IDF/embeddings with improved accuracy under low labels.
+            </p>
+            <div class="actions">
+              <a href="#" class="pill">Repo (add link)</a>
+              <a href="#" class="pill">Notebook</a>
+            </div>
+          </article>
+
+          <!-- Organ Matching -->
+          <article class="card">
+            <h3>Organ Matching and Transplantation</h3>
+            <div class="meta">Classification • Healthcare</div>
+            <p class="small">
+              Donor–recipient compatibility modeling to enhance match accuracy and reduce wait times.
+            </p>
+            <div class="actions">
+              <a href="#" class="pill">Repo (add link)</a>
+              <a href="#" class="pill">Report</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section>
+        <h2 style="margin:0 0 10px 0;font-weight:800;font-size:1.1rem">Skills</h2>
+        <ul class="tight small">
+          <li><b>Programming:</b> Python, Java, C, C++</li>
+          <li><b>Web:</b> FastAPI, Flask, Streamlit, HTML, CSS, JavaScript</li>
+          <li><b>ML/AI:</b> TensorFlow, PyTorch, Scikit-learn, Keras, LangChain, Gemini API, NLP</li>
+          <li><b>CV:</b> OpenCV, YOLO, Detectron2</li>
+          <li><b>Data:</b> SQL, Pandas, NumPy</li>
+          <li><b>Tools:</b> Git, GitHub, Linux, Jupyter Notebook</li>
+        </ul>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section>
+        <h2 style="margin:0 0 10px 0;font-weight:800;font-size:1.1rem">Experience</h2>
+        <div class="card">
+          <h3>Machine Learning Intern — TEKROI Pvt Ltd</h3>
+          <div class="meta">Sep 2024 – Nov 2024 • Hyderabad</div>
+          <ul class="tight small">
+            <li>Built ML models for classification & regression; performed data cleaning, feature engineering, and model evaluation.</li>
+            <li>Deployed models with FastAPI/Flask for real-world testing.</li>
+          </ul>
+          <div class="actions">
+            <a class="pill" href="https://tekroi.com/" target="_blank" rel="noopener">Company</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section>
+        <h2 style="margin:0 0 10px 0;font-weight:800;font-size:1.1rem">Contact</h2>
+        <p class="small">
+          Hyderabad, Telangana • <a href="mailto:rnarendhra5@gmail.com">rnarendhra5@gmail.com</a><br/>
+          LinkedIn: <a href="https://www.linkedin.com/in/narendhra-rampelly-149848227" target="_blank" rel="noopener">/in/narendhra-rampelly-149848227</a> •
+          GitHub: <a href="https://github.com/RNarendhra" target="_blank" rel="noopener">@RNarendhra</a>
+        </p>
+      </section>
+
+      <footer>
+        <p class="small">© <span id="y"></span> Narendhra R • Built with vanilla HTML/CSS • Deployed on Vercel</p>
+      </footer>
+    </main>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
